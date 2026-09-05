@@ -476,3 +476,101 @@ footer a:hover {
   align-items: center;
   gap: 10px;
 }
+/* ==========================================
+   MOBILE & RESPONSIVE BREAKPOINTS
+   ========================================== */
+
+/* Tablet & Mobile Layout (768px and below) */
+@media (max-width: 768px) {
+  /* Prevent horizontal overflow on narrow viewports */
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* Stack Header & Centered Navigation Links */
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px 16px;
+  }
+
+  nav a {
+    font-size: 0.88rem;
+    padding: 4px 0;
+  }
+
+  /* Adjust Hero Padding & Font Sizes */
+  .hero {
+    padding: 48px 0 36px;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+  }
+
+  /* Mobile App Cards */
+  .app-grid {
+    grid-template-columns: 1fr; /* Single column on phones */
+    gap: 18px;
+  }
+
+  .app-card-body {
+    padding: 18px;
+  }
+
+  .app-header h3 {
+    font-size: 1.15rem;
+  }
+
+  /* Mobile CTA Buttons (Full Width for Easy Tapping) */
+  .btn-primary,
+  .store-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+
+  .contact-email {
+    font-size: 1.05rem;
+    word-break: break-word; /* Prevents email string overflow */
+  }
+}
+
+/* Small Smartphone Optimization (480px and below) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.15rem;
+  }
+
+  nav a {
+    font-size: 0.82rem;
+  }
+  
+  .badge {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+  }
+}
