@@ -401,3 +401,78 @@ footer a:hover {
     scroll-behavior: auto !important;
   }
 }
+/* App Cards with Banners */
+.app-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden; /* Clips image cleanly to border-radius */
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  border-color: #444c56;
+  box-shadow: var(--shadow-md);
+}
+
+/* Banner Image Wrapper */
+.app-banner {
+  width: 100%;
+  aspect-ratio: 416 / 235;
+  background-color: #0d1117;
+  overflow: hidden;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.app-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.app-card:hover .app-banner img {
+  transform: scale(1.03); /* Subtle zoom effect on card hover */
+}
+
+/* Card Body Content */
+.app-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.app-header h3 {
+  color: var(--text-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+}
+
+.app-card-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Google Play CTA Button Icon alignment */
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
