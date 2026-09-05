@@ -6,10 +6,12 @@
     <title>GetSetGo Apps - Mobile Utilities & Productivity</title>
     <meta name="description" content="Fast, efficient, and privacy-first Android utility applications processing data directly on your device.">
     
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
+    <!-- Header Navigation -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">GetSetGo Apps</a>
@@ -17,12 +19,13 @@
                 <a href="#apps">Our Apps</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="/privacy-policy/" id="privacy-link">Privacy Policy</a>
+                <a href="https://www.getsetgoapp.com/privacy-policy/">Privacy Policy</a>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container hero-content">
                 <h1>Fast, Efficient & Secure Utility Apps</h1>
@@ -31,6 +34,7 @@
             </div>
         </section>
 
+        <!-- App Showcase Section -->
         <section id="apps" class="section">
             <div class="container">
                 <h2 class="section-title">Featured Applications</h2>
@@ -54,6 +58,7 @@
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section dark-bg">
             <div class="container text-center">
                 <h2 class="section-title">Privacy-First Architecture</h2>
@@ -63,6 +68,7 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container text-center">
                 <h2 class="section-title">Get in Touch</h2>
@@ -72,29 +78,16 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-content">
             <p>&copy; 2026 GetSetGo Apps. All rights reserved.</p>
             <p>
-                <button type="button" class="btn-link" id="open-privacy-modal" style="background:none; border:none; color:inherit; font:inherit; cursor:pointer; text-decoration:underline;">Privacy Policy</button> | 
+                <a href="https://www.getsetgoapp.com/privacy-policy/">Privacy Policy</a> | 
                 <a href="/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a>
             </p>
         </div>
     </footer>
-
-    <div class="modal" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <div class="modal-content">
-            <button type="button" class="close-btn" id="close-privacy-modal" aria-label="Close modal">&times;</button>
-            <h2 id="modal-title">Privacy Policy</h2>
-            <p class="effective-date">Effective Date: January 1, 2026</p>
-            
-            <h3>Data Collection</h3>
-            <p>GetSetGo Apps operates on an on-device model. We do not transmit, collect, or store personal files or telemetry on external servers.</p>
-
-            <h3>Permissions</h3>
-            <p>Required device permissions are strictly utilized locally to perform core utility features like file conversion and media processing.</p>
-        </div>
-    </div>
 
     <script src="/script.js"></script>
 </body>
